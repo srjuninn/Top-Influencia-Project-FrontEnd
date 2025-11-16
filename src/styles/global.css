@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: none;
-    
+    border: none;
     list-style: none;
     text-decoration: none;
     font-family: "Alexandria", sans-serif;
@@ -21,6 +21,6 @@
     --color-black700: #4c4c4c;
     --color-black600: #666666;
 
-    --purple-gradient: linear-gradient(#50389A, #AE2D67);
-    --blue-gradient: linear-gradient(#50389A, #1B1334);
+    --purple-gradient: #50389A, #AE2D67;
+    --blue-gradient: #50389A, #1B1334;
 }
