@@ -24,3 +24,10 @@
     --purple-gradient: #50389A, #AE2D67;
     --blue-gradient: #50389A, #1B1334;
 }
+button{
+    cursor: pointer;;
+}
+nav>ul>li>a.active {
+    color: var(--color-black1000);
+    font-weight: 400;
+}
