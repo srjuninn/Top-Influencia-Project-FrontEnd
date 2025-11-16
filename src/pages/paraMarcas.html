@@ -96,7 +96,7 @@
         <p>já possuí cadastro ?</p>
         <p>faça seu <span>login</span></p>
         <p>ou</p>
-        <button>Entre em contato</button>
+        <button id="scrollBtn">Entre em contato</button>
       </div>
     </main>
     <!-- Main -->
@@ -187,5 +187,77 @@
       </div>
     </section>
     <!-- Nichos -->
+    <!-- Contato  -->
+    <div id="contato" class="contato">
+      <h2>
+        Este formulário rápido é para entendermos o básico sobre seu perfil e
+        seus valores de partida.
+      </h2>
+      <form action="" method="post">
+        <div class="fieldsetWrap">
+          <fieldset>
+            <legend>Contato Principal</legend>
+            <div class="content">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" />
+            </div>
+            <p>ex: nome da minha empresa</p>
+            <div class="content">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" />
+            </div>
+            <p>ex: meu nome completo</p>
+            <div class="content">
+              <label for="email">Email Principal</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <p>ex: exemplodeemail@gmail.com</p>
+            <div class="content">
+              <label for="telefone">Whatsapp (com DDD)</label>
+              <input type="tel" id="telefone" name="telefone" />
+            </div>
+            <p>ex: 11 99XXXX-XXXX</p>
+          </fieldset>
+          <fieldset>
+            <legend>Campanhas</legend>
+            <div class="content">
+              <label for="divulgado">O que será divulgado ?</label>
+              <input type="text" id="divulgado" name="divulgado" />
+            </div>
+            <p>ex: produtos, serviços, marcas</p>
+            <div class="content">
+              <label for="objetivo">Qual o objetivo ?</label>
+              <input type="text" id="objetivo" name="objetivo" />
+            </div>
+            <p>ex: vender, divulgar, engajar</p>
+            <div class="content">
+              <label for="publico">Público alvo e idade do público</label>
+              <input type="text" id="publico" name="publico" />
+            </div>
+            <p>ex: homens e mulheres > 20 anos</p>
+            <div class="content">
+              <label for="plataforma">Foco da plataforma</label>
+              <input type="text" id="plataforma" name="plataforma" />
+            </div>
+            <p>ex: youtube, tiktok, instagram</p>
+          </fieldset>
+          <fieldset>
+            <legend>Preços e Prazos</legend>
+            <div class="content">
+              <label for="investimento">Qual a faixa de investimento ?</label>
+              <input type="number" id="investimento" name="investimento" />
+            </div>
+            <p>ex: 5.000,00</p>
+            <div class="content">
+              <label for="prazo">Prazo da campanha</label>
+              <input type="text" id="prazo" name="prazo" />
+            </div>
+            <p>ex: vender, divulgar, engajar</p>
+          </fieldset>
+        </div>
+        <button type="submit">Enviar Formulário</button>
+      </form>
+    </div>
+    <!-- Contato  -->
   </body>
 </html>
