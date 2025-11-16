@@ -1,0 +1,165 @@
+@import url(/src/styles/global.css);
+
+/* ---------- Ínicio Header ---------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 60px;
+    background-color: var(--color-white1000);
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav>ul>li>a {
+    color: var(--color-black600);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+nav>ul>li>a.active {
+    color: var(--color-black1000);
+    font-weight: 400;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonsWrapper>button:nth-child(1) {
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: var(--color-white1000);
+    background: linear-gradient(to bottom, var(--purple-gradient))
+}
+
+.buttonsWrapper>button:nth-child(2) {
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: var(--color-black600);
+    background:
+        linear-gradient(var(--color-white1000), var(--color-white1000)) padding-box,
+        linear-gradient(to bottom, var(--purple-gradient)) border-box;
+    border: 2px solid transparent;
+}
+
+/* ---------- Fim Header ---------- */
+/* ---------- Ínicio Main ----------  */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--color-white700);
+}
+
+main>h1 {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: 500;
+    background: linear-gradient(to bottom, var(--blue-gradient));
+    /* recorta o background no formato do texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* deixa o texto transparente para mostrar o gradiente */
+}
+
+main>h2 {
+    width: 645px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-black600);
+    text-align: center;
+}
+
+.cardsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardsWrapper>.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 40px 17px;
+    border-radius: 20px;
+    width: 275px;
+    background-color: var(--color-white1000);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.cardsWrapper>.card>h3 {
+    color: var(--color-black1000);
+    font-size: 18px;
+    text-align: center;
+}
+
+.cardsWrapper>.card>p {
+    color: var(--color-black600);
+    font-size: 16px;
+    text-align: center;
+}
+
+main>button {
+    margin-top: 55px;
+    padding: 20px 20px;
+    border-radius: 30px;
+    color: var(--color-white500);
+    background: linear-gradient(to bottom, var(--purple-gradient))
+}
+
+.possuiCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.possuiCadastro>p {
+    font-size: 16px;
+    color: var(--color-black900);
+}
+
+.possuiCadastro>p>span {
+    position: relative;
+    background: linear-gradient(to bottom, var(--blue-gradient));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid var(--color-black600);
+}
+
+.possuiCadastro>button {
+    padding: 20px 20px;
+    border-radius: 40px;
+    color: var(--color-black1000);
+    background:
+        linear-gradient(var(--color-white700), var(--color-white700)) padding-box,
+        linear-gradient(to bottom, var(--purple-gradient)) border-box;
+    border: 2px solid transparent;
+}
+/* ---------- Fim Main ----------  */
+/* ---------- Ínicio section nichos ---------- */
+
+/* ---------- Fim section nichos ---------- */
