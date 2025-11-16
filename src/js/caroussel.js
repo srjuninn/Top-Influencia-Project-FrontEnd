@@ -24,3 +24,8 @@ function startAutoSlide() {
 // Inicialização
 updateActiveCard();
 startAutoSlide();
+
+// Scroll suave para a seção de contato 
+document.getElementById("scrollBtn").addEventListener("click", () => {
+  document.getElementById("contato").scrollIntoView({ behavior: "smooth" });
+});
