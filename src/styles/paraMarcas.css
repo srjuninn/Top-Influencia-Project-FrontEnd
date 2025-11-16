@@ -151,6 +151,7 @@ main>button {
 }
 
 .possuiCadastro>button {
+    margin-bottom: 55px;
     padding: 20px 20px;
     border-radius: 40px;
     color: var(--color-black1000);
@@ -159,7 +160,103 @@ main>button {
         linear-gradient(to bottom, var(--purple-gradient)) border-box;
     border: 2px solid transparent;
 }
+
 /* ---------- Fim Main ----------  */
 /* ---------- Ínicio section nichos ---------- */
+.nichos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-white1000);
+}
+
+.nichos>h2 {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: 500;
+    background: linear-gradient(to bottom, var(--blue-gradient));
+    /* recorta o background no formato do texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* deixa o texto transparente para mostrar o gradiente */
+}
+
+.caroussel {
+    display: flex;
+    overflow: hidden;
+    /* esconde cards fora da área */
+    gap: 20px;
+    padding: 10px;
+    margin: 30px 0 30px 0;
+    position: relative;
+}
+
+.carousselCard {
+    flex: 0 0 400px;
+    scroll-snap-align: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* card ativo */
+.carousselCard.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.carousselCard.active h3 {
+    font-weight: 500;
+    background: linear-gradient(to bottom, var(--blue-gradient));
+    /* recorta o background no formato do texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* deixa o texto transparente para mostrar o gradiente */
+}
+
+/* cards inativos */
+.carousselCard:not(.active) {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.carousselCard:not(.active) h3 {
+    color: var(--color-black600);
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+
+.carousselCard>h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.caroussel img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.nichos>.caroussel>.carousselCard>nav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nichos>.caroussel>.carousselCard>nav>ul>li {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black1000);
+
+}
+
+
 
 /* ---------- Fim section nichos ---------- */
