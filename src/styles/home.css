@@ -1,4 +1,6 @@
 @import url(/src/styles/global.css);
+
+/* ---------- Header ---------- */
 header {
     display: flex;
     justify-content: center;
@@ -7,18 +9,78 @@ header {
     gap: 60px;
     background-color: var(--color-white1000);
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
     color: var(--color-black600);
     font-size: 16px;
     font-weight: 300;
 }
-nav > ul > li > a.active {
+
+nav>ul>li>a.active {
     color: var(--color-black1000);
     font-weight: 400;
 }
+
+/* ---------- Main ---------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    min-height: 570px;
+    background-image: url('/src/assets/images/backgroundImage1.svg');
+    background-size: cover;
+    background-position: top;
+    margin: 0;
+    padding: 0;
+}
+
+main>h1 {
+    color: var(--color-white1000);
+    font-size: 67px;
+    font-weight: 700;
+    text-align: center;
+    ;
+}
+
+main>h2 {
+    width: 640px;
+    color: var(--color-white500);
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main>.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main>.buttonsWrapper>button:nth-child(1) {
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    padding: 12px 17px;
+    border-radius: 12px;
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--color-white1000);
+}
+
+main>.buttonsWrapper>button:nth-child(2) {
+    background: linear-gradient(to top, var(--purple-gradient));
+    padding: 12px 17px;
+    border-radius: 12px;
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--color-white1000);
+}
+/* ---------- Main ---------- */
