@@ -73,6 +73,14 @@ main>.buttonsWrapper>button:nth-child(1) {
     font-size: 23px;
     font-weight: 400;
     color: var(--color-white1000);
+    cursor: pointer;
+}
+
+main>.buttonsWrapper>button:nth-child(1):hover {
+    background: linear-gradient(to top, var(--purple-gradient));
+    transform: scale(1.05);
+    /* dá uma leve aumentada */
+    transition: all 0.3s ease;
 }
 
 main>.buttonsWrapper>button:nth-child(2) {
@@ -82,5 +90,13 @@ main>.buttonsWrapper>button:nth-child(2) {
     font-size: 23px;
     font-weight: 400;
     color: var(--color-white1000);
+    cursor: pointer;
 }
+
+main>.buttonsWrapper>button:nth-child(2):hover {
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 /* ---------- Main ---------- */
