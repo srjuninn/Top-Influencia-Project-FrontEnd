@@ -35,36 +35,40 @@ nav>ul>li>a.active {
     gap: 10px;
 }
 
-.buttonsWrapper > button:nth-child(1) {
-  padding: 10px 30px;
-  border-radius: 20px;
-  color: var(--color-white1000);
-  background: linear-gradient(to bottom, var(--purple-gradient));
-  transition: all 0.3s ease;
+.buttonsWrapper>button:nth-child(1) {
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: var(--color-white1000);
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    transition: all 0.3s ease;
 }
 
-.buttonsWrapper > button:nth-child(1):hover {
-  filter: brightness(1.2); /* deixa o gradiente mais vivo */
-  transform: scale(1.05);  /* leve aumento */
+.buttonsWrapper>button:nth-child(1):hover {
+    filter: brightness(1.2);
+    /* deixa o gradiente mais vivo */
+    transform: scale(1.05);
+    /* leve aumento */
 }
 
-.buttonsWrapper > button:nth-child(2) {
-  padding: 10px 40px;
-  border-radius: 20px;
-  color: var(--color-black600);
-  background:
-    linear-gradient(var(--color-white1000), var(--color-white1000)) padding-box,
-    linear-gradient(to bottom, var(--purple-gradient)) border-box;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
+.buttonsWrapper>button:nth-child(2) {
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: var(--color-black600);
+    background:
+        linear-gradient(var(--color-white1000), var(--color-white1000)) padding-box,
+        linear-gradient(to bottom, var(--purple-gradient)) border-box;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
-.buttonsWrapper > button:nth-child(2):hover {
-  color: var(--color-white1000); /* texto branco */
-  background:
-    linear-gradient(to bottom, var(--purple-gradient)) padding-box,
-    linear-gradient(to bottom, var(--purple-gradient)) border-box;
-  transform: scale(1.05); /* leve aumento */
+.buttonsWrapper>button:nth-child(2):hover {
+    color: var(--color-white1000);
+    /* texto branco */
+    background:
+        linear-gradient(to bottom, var(--purple-gradient)) padding-box,
+        linear-gradient(to bottom, var(--purple-gradient)) border-box;
+    transform: scale(1.05);
+    /* leve aumento */
 }
 
 
@@ -144,10 +148,13 @@ main>button {
     background: linear-gradient(to bottom, var(--purple-gradient))
 }
 
-main > button:hover {
-  filter: brightness(1.2);          /* gradiente mais vivo */
-  transform: translateY(-3px);      /* sobe levemente */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* sombra destacada */
+main>button:hover {
+    filter: brightness(1.2);
+    /* gradiente mais vivo */
+    transform: translateY(-3px);
+    /* sobe levemente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    /* sombra destacada */
 }
 
 .possuiCadastro {
@@ -183,13 +190,16 @@ main > button:hover {
     border: 2px solid transparent;
 }
 
-.possuiCadastro > button:hover {
-  color: var(--color-white1000); /* texto branco */
-  background:
-    linear-gradient(to bottom, var(--purple-gradient)) padding-box,
-    linear-gradient(to bottom, var(--purple-gradient)) border-box;
-  transform: scale(1.08) rotate(-1deg); /* cresce e gira levemente */
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2); /* sombra suave */
+.possuiCadastro>button:hover {
+    color: var(--color-white1000);
+    /* texto branco */
+    background:
+        linear-gradient(to bottom, var(--purple-gradient)) padding-box,
+        linear-gradient(to bottom, var(--purple-gradient)) border-box;
+    transform: scale(1.08) rotate(-1deg);
+    /* cresce e gira levemente */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    /* sombra suave */
 }
 
 /* ---------- Fim Main ----------  */
@@ -394,10 +404,47 @@ fieldset>p {
     background: linear-gradient(to bottom, var(--purple-gradient));
 }
 
-.contato > form > button:hover {
-  filter: brightness(1.15);              /* deixa o gradiente mais vivo */
-  transform: translateY(-3px) scale(1.05); /* sobe e cresce levemente */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* sombra suave */
-  letter-spacing: 1px;                   /* abre um pouco o texto */
+.contato>form>button:hover {
+    filter: brightness(1.15);
+    /* deixa o gradiente mais vivo */
+    transform: translateY(-3px) scale(1.05);
+    /* sobe e cresce levemente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    /* sombra suave */
+    letter-spacing: 1px;
+    /* abre um pouco o texto */
 }
+
+#mensagem {
+    position: absolute;
+    top: 2300px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 760px;
+    background: linear-gradient(var(--purple-gradient));
+    color: var(--color-white1000);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.8s ease forwards;
+}
+
+.oculto {
+    display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* ---------- Fim section contato ---------- */
