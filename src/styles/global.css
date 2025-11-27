@@ -31,3 +31,84 @@ nav>ul>li>a.active {
     color: var(--color-black1000);
     font-weight: 400;
 }
+nav > ul > li > a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-black600);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover com gradiente no texto */
+nav > ul > li > a:hover {
+  background: linear-gradient(to right, #50389A, #AE2D67);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Underline gradiente */
+nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #50389A, #AE2D67);
+  transition: width 0.3s ease;
+}
+
+nav > ul > li > a:hover::after {
+  width: 100%;
+}
+
+
+/* Efeito underline animado */
+nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #50389A, #AE2D67);
+  transition: width 0.3s ease;
+}
+
+nav > ul > li > a:hover::after {
+  width: 100%;
+}
+
+#mensagem {
+    position: absolute;
+    top: 2300px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 760px;
+    background: linear-gradient(var(--purple-gradient));
+    color: var(--color-white1000);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.8s ease forwards;
+}
+
+.oculto {
+    display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
