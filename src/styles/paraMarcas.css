@@ -414,37 +414,4 @@ fieldset>p {
     letter-spacing: 1px;
     /* abre um pouco o texto */
 }
-
-#mensagem {
-    position: absolute;
-    top: 2300px;
-    margin-top: 20px;
-    padding: 15px;
-    width: 760px;
-    background: linear-gradient(var(--purple-gradient));
-    color: var(--color-white1000);
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    animation: aparecer 0.8s ease forwards;
-}
-
-.oculto {
-    display: none;
-}
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* ---------- Fim section contato ---------- */
