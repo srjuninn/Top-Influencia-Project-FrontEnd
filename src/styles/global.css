@@ -25,7 +25,8 @@
     --blue-gradient: #50389A, #1B1334;
 }
 button{
-    cursor: pointer;;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 nav>ul>li>a.active {
     color: var(--color-black1000);
