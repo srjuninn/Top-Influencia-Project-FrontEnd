@@ -32,12 +32,13 @@ main {
     justify-content: center;
     align-items: center;
     gap: 45px;
+    width: 100%;
     min-height: 570px;
-    background-image: url('/src/assets/images/backgroundImage1.svg');
-    background-size: cover;
-    background-position: top;
-    margin: 0;
-    padding: 0;
+}
+main > img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
 }
 
 main>h1 {
@@ -50,7 +51,7 @@ main>h1 {
 
 main>h2 {
     width: 640px;
-    color: var(--color-white500);
+    color: var(--color-white700);
     font-size: 27px;
     font-weight: 400;
     text-align: center;
@@ -95,5 +96,3 @@ main>.buttonsWrapper>button:nth-child(2):hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
-
-/* ---------- Main ---------- */
