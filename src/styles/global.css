@@ -24,6 +24,16 @@
     --purple-gradient: #50389A, #AE2D67;
     --blue-gradient: #50389A, #1B1334;
 }
+
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease; /* controla a suavidade */
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
 button{
     cursor: pointer;
     transition: all 0.3s ease;
@@ -84,7 +94,7 @@ nav > ul > li > a:hover::after {
 
 #mensagem {
     position: absolute;
-    top: 2300px;
+    /* top: 2300px; */
     margin-top: 20px;
     padding: 15px;
     width: 760px;
