@@ -31,10 +31,12 @@ main {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background-color: #FCFCFC;
 }
 
 main>img {
     width: 100%;
+    height: 400px;
 }
 
 .sobreNosContent {
