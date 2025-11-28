@@ -112,6 +112,16 @@ nav > ul > li > a:hover::after {
     display: none;
 }
 
+input.erro {
+  border: 2px solid red;
+  background-color: #ffe5e5;
+}
+
+
+.notYet {
+  display: none;
+}
+
 @keyframes aparecer {
     from {
         opacity: 0;

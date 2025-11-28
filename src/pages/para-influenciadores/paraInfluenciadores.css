@@ -1,0 +1,279 @@
+@import url(/src/styles/global.css);
+
+/* ---------- Ínicio Header ---------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 60px;
+    background-color: var(--color-white1000);
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+nav>ul>li>a.active {
+    color: var(--color-black1000);
+    font-weight: 400;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonsWrapper>button:nth-child(1) {
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: var(--color-white1000);
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    transition: all 0.3s ease;
+}
+
+.buttonsWrapper>button:nth-child(1):hover {
+    filter: brightness(1.2);
+    /* deixa o gradiente mais vivo */
+    transform: scale(1.05);
+    /* leve aumento */
+}
+
+.buttonsWrapper>button:nth-child(2) {
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: var(--color-black600);
+    background:
+        linear-gradient(var(--color-white1000), var(--color-white1000)) padding-box,
+        linear-gradient(to bottom, var(--purple-gradient)) border-box;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.buttonsWrapper>button:nth-child(2):hover {
+    color: var(--color-white1000);
+    /* texto branco */
+    background:
+        linear-gradient(to bottom, var(--purple-gradient)) padding-box,
+        linear-gradient(to bottom, var(--purple-gradient)) border-box;
+    transform: scale(1.05);
+    /* leve aumento */
+}
+
+/* ---------- Fim Header ---------- */
+/* ---------- Inicio do main ---------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+    background-color: var(--color-white700);
+}
+
+main>h1 {
+    margin-top: 70px;
+    width: 600px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--blue-gradient));
+    /* recorta o background no formato do texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* deixa o texto transparente para mostrar o gradiente */
+
+}
+
+main>h2 {
+    width: 600px;
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-black600);
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.mainContent>aside>nav>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.mainContent>aside>nav>ul>li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.mainContent>aside>nav>ul>li>p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-black900);
+}
+
+main>button:nth-child(4) {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    color: var(--color-white1000);
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    transition: all 0.3s ease;
+}
+
+main > button:nth-child(4):hover {
+  filter: brightness(1.15);              
+  transform: translateY(-3px) scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+main>button:nth-child(5) {
+    padding: 20px;
+    border-radius: 40px;
+    background-color: var(--color-white700);
+    background: linear-gradient(var(--color-white700)) padding-box,
+        linear-gradient(var(--purple-gradient)) border-box;
+    border-bottom: 3px solid transparent;
+    margin-bottom: 40px;
+}
+
+main > button:nth-child(5):hover {
+  transform: translateY(-3px) scale(1.05); /* sobe e aumenta levemente */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* sombra suave */
+  transition: all 0.3s ease; /* transição suave */
+}
+/* ---------- Fim do main ---------- */
+/* ---------- Ínicio section contato ---------- */
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    background-color: var(--color-white1000);
+}
+
+.contato>h2 {
+    width: 920px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, var(--blue-gradient));
+    /* recorta o background no formato do texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* deixa o texto transparente para mostrar o gradiente */
+}
+
+.contato>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.fieldsetWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.contato>form>.fieldsetWrap>fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 360px;
+}
+
+.contato>form>.fieldsetWrap>fieldset>legend {
+    font-size: 24px;
+    font-weight: 400;
+    background: linear-gradient(to bottom, var(--blue-gradient));
+    /* recorta o background no formato do texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* deixa o texto transparente para mostrar o gradiente */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.content>label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black900);
+}
+
+.content>input {
+    width: 100%;
+    height: 42px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: linear-gradient(var(--color-white1000)) padding-box, linear-gradient(-38deg, #50389A, #AE2D67) border-box;
+    border: 2px solid transparent;
+}
+
+.content>input:focus {
+    outline: none;
+}
+
+fieldset>p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-black600);
+}
+
+.contato>form>.fieldsetWrap>fieldset:nth-child(3) {
+    align-self: start;
+}
+
+.contato>form>button {
+    /* margin-bottom: 40px; */
+    padding: 20px 120px;
+    border-radius: 40px;
+    color: var(--color-white1000);
+    background: linear-gradient(to bottom, var(--purple-gradient));
+}
+
+.contato>form>button:hover {
+    filter: brightness(1.15);
+    /* deixa o gradiente mais vivo */
+    transform: translateY(-3px) scale(1.05);
+    /* sobe e cresce levemente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    /* sombra suave */
+    letter-spacing: 1px;
+    /* abre um pouco o texto */
+}
+/* ---------- Fim section contato ---------- */

@@ -1,0 +1,98 @@
+@import url(/src/styles/global.css);
+
+/* ---------- Header ---------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 60px;
+    background-color: var(--color-white1000);
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav>ul>li>a {
+    color: var(--color-black600);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+/* ---------- Main ---------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    width: 100%;
+    min-height: 570px;
+}
+main > img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+main>h1 {
+    color: var(--color-white1000);
+    font-size: 67px;
+    font-weight: 700;
+    text-align: center;
+    ;
+}
+
+main>h2 {
+    width: 640px;
+    color: var(--color-white700);
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main>.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main>.buttonsWrapper>button:nth-child(1) {
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    padding: 12px 17px;
+    border-radius: 12px;
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--color-white1000);
+    cursor: pointer;
+}
+
+main>.buttonsWrapper>button:nth-child(1):hover {
+    background: linear-gradient(to top, var(--purple-gradient));
+    transform: scale(1.05);
+    /* dá uma leve aumentada */
+    transition: all 0.3s ease;
+}
+
+main>.buttonsWrapper>button:nth-child(2) {
+    background: linear-gradient(to top, var(--purple-gradient));
+    padding: 12px 17px;
+    border-radius: 12px;
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--color-white1000);
+    cursor: pointer;
+}
+
+main>.buttonsWrapper>button:nth-child(2):hover {
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
