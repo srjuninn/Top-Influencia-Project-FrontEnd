@@ -12,19 +12,36 @@
       rel="stylesheet"
     />
     <script src="/src/js/index.js" defer></script>
-  <link rel="shortcut icon" href="/src/assets/images/lightFavIcon.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/src/assets/images/lightFavIcon.svg"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <img
-        src="/src/assets/images/logotipo.svg"
-        alt="logotipo da empresa top influência"
-      />
-      <nav>
+      <div class="header-wrapper">
+        <img
+          src="/src/assets/images/logotipo.svg"
+          alt="logotipo da empresa top influência"
+          class="logo"
+        />
+
+        <!-- Botão hamburguer -->
+        <button class="hamburger" id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav id="navMenu">
         <ul>
           <li><a href="/index.html" class="active">Home</a></li>
-          <li><a href="/src/pages/para-marcas/paraMarcas.html">Para Marcas</a></li>
+          <li>
+            <a href="/src/pages/para-marcas/paraMarcas.html">Para Marcas</a>
+          </li>
           <li>
             <a href="/src/pages/para-influenciadores/paraInfluenciadores.html"
               >Para Influenciadores</a
@@ -36,7 +53,7 @@
     </header>
     <!-- Header -->
     <main>
-      <img src="/src/assets/images/backgroundImage1.svg" alt="">
+      <img src="/src/assets/images/backgroundImage1.svg" alt="" />
       <h1>Conectamos sua marca ao topo com micro-influenciadores</h1>
       <h2>
         Especialistas em campanhas de performace e marketing de afiliados para
