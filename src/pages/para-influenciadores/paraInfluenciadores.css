@@ -476,15 +476,15 @@ fieldset>p {
   }
 
   .mainContent > aside > nav > ul > li > p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   main > button:nth-child(4),
   main > button:nth-child(5) {
     width: 100%;
-    max-width: 320px;
+    max-width: 350px;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   /* Cards (se usar em outras sessões) */
@@ -537,10 +537,10 @@ fieldset>p {
   }
 
   .contato > form > .fieldsetWrap > fieldset > legend {
-    font-size: 20px;
+    font-size: 24px;
   }
 
-  .content > label { font-size: 16px; }
+  .content > label { font-size: 18px; }
 
   .content > input {
     height: 38px;
@@ -548,7 +548,7 @@ fieldset>p {
     font-size: 14px;
   }
 
-  fieldset > p { font-size: 15px; }
+  fieldset > p { font-size: 16px; }
 
   .contato > form > button {
     width: 100%;
