@@ -185,10 +185,8 @@ main>button:hover {
     padding: 20px 20px;
     border-radius: 40px;
     color: var(--color-black1000);
-    background:
-        linear-gradient(var(--color-white700), var(--color-white700)) padding-box,
-        linear-gradient(to bottom, var(--purple-gradient)) border-box;
-    border: 2px solid transparent;
+    background: linear-gradient(to bottom, var(--purple-gradient));
+    color: var(--color-white1000);
 }
 
 .possuiCadastro>button:hover {
