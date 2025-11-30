@@ -1,3 +1,5 @@
+emailjs.init("zi_XQDHjKqOpq6Ipo"); // substitua pela sua chave pública
+
 // Seleciona o formulário
 const form = document.querySelector("form");
 
@@ -6,11 +8,11 @@ const numericFields = [
   "valorCampanha",
   "seguidoresInstagram",
   "seguidoresTikTok",
-  "inscritosYouTube"
+  "inscritosYouTube",
 ];
 
 // Restringe a digitação a apenas números e vírgula
-numericFields.forEach(id => {
+numericFields.forEach((id) => {
   const input = document.getElementById(id);
   if (input) {
     input.addEventListener("keypress", (e) => {
@@ -34,13 +36,13 @@ numericFields.forEach(id => {
 });
 
 // Validação e envio do formulário
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault(); // impede envio padrão
 
   let valido = true;
 
   // Valida todos os campos numéricos
-  numericFields.forEach(id => {
+  numericFields.forEach((id) => {
     const input = document.getElementById(id);
     if (input) {
       // Aceita apenas dígitos e vírgulas
@@ -59,7 +61,8 @@ form.addEventListener("submit", function(event) {
   }
 
   // Integração com EmailJS usando o template dos influenciadores
-  emailjs.sendForm("service_z3dskji", "template_agfrgtu", form)
+  emailjs
+    .sendForm("service_dmn32ju", "template_k8a2qrg", form)
     .then(() => {
       const msg = document.getElementById("mensagem");
       if (msg) {

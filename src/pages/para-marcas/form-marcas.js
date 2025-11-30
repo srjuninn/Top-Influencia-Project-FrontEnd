@@ -1,3 +1,5 @@
+// Inicializa o EmailJS com sua chave pública
+emailjs.init("zi_XQDHjKqOpq6Ipo");
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function (event) {
@@ -18,7 +20,7 @@ form.addEventListener("submit", function (event) {
   }
 
   emailjs
-    .sendForm("service_z3dskji", "template_ejg3crc", form)
+    .sendForm("service_dmn32ju", "template_j7jbudl", form)
     .then(() => {
       const msg = document.getElementById("mensagem");
       msg.classList.remove("oculto");
