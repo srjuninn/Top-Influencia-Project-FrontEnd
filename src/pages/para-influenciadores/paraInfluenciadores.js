@@ -1,33 +1,3 @@
-////////////////////////////// Carrossel /////////////////////////////////////
-const cards = document.querySelectorAll(".carousselCard");
-
-let currentIndex = 0;
-let autoSlide;
-
-function updateActiveCard() {
-  cards.forEach((card, index) => {
-    card.classList.toggle("active", index === currentIndex);
-  });
-}
-
-function nextCard() {
-  currentIndex = (currentIndex + 1) % cards.length;
-  updateActiveCard();
-}
-
-function startAutoSlide() {
-  autoSlide = setInterval(nextCard, 3000);
-}
-
-updateActiveCard();
-startAutoSlide();
-
-//////////////////////////// Scroll suave para o form //////////////////////////
-const scrollBtn = document.getElementById("scrollBtn");
-scrollBtn.addEventListener("click", () => {
-  document.getElementById("contato").scrollIntoView({ behavior: "smooth" });
-});
-
 /////////////////////////// Formatação de números /////////////////////////////
 // IDs atualizados para camelCase
 const numericFields = [
