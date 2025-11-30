@@ -11,34 +11,48 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
+    <link rel="shortcut icon" href="/src/assets/images/lightFavIcon.svg" type="image/x-icon">
     <script src="/src/pages/para-influenciadores/paraInfluenciadores.js" defer></script>
+    <script src="/src/js/scroll.js" defer></script>
+    <script src="/src/js/hamburgerMenu.js" defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-      <link rel="shortcut icon" href="/src/assets/images/lightFavIcon.svg" type="image/x-icon">
 
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <img src="/src/assets/images/logotipo.svg" alt="logotipo da empresa top influência" />
-        <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li>
-                    <a href="/src/pages/para-marcas/paraMarcas.html">Para Marcas</a>
-                </li>
-                <li>
-                    <a href="/src/pages/para-influenciadores/paraInfluenciadores.html" class="active">Para Influenciadores</a>
-                </li>
-                <li><a href="/src/pages/sobre-nos/sobreNos.html">Sobre Nós</a></li>
-            </ul>
-        </nav>
+      <div class="header-wrapper">
+        <img
+          src="/src/assets/images/logotipo.svg"
+          alt="logotipo da empresa top influência"
+          class="logo"
+        />
 
-        <!-- Este botão de login não esta sendo usado no momento -->
-        <!-- <div class="buttonsWrapper">
-            <button>Login</button>
-            <button>Sign up</button>
-        </div> -->
+        <!-- Botão hamburguer -->
+        <button class="hamburger" id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav id="navMenu">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li>
+            <a href="/src/pages/para-marcas/paraMarcas.html" 
+              >Para Marcas</a
+            >
+          </li>
+          <li>
+            <a href="/src/pages/para-influenciadores/paraInfluenciadores.html" class="active"
+              >Para Influenciadores</a
+            >
+          </li>
+          <li><a href="/src/pages/sobre-nos/sobreNos.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Header -->
     <!-- inicio do main -->
@@ -142,17 +156,17 @@
         <fieldset>
           <legend>Público</legend>
           <div class="content">
-            <label for="seguidoresInstagram">Número de seguidores</label>
+            <label for="seguidoresInstagram">Número de seguidores (Instagram)</label>
             <input type="text" id="seguidoresInstagram" name="seguidoresInstagram" required/>
           </div>
           <p>ex: 14,720,077</p>
           <div class="content">
-            <label for="seguidoresTikTok">Número de seguidores</label>
+            <label for="seguidoresTikTok">Número de seguidores (Tiktok)</label>
             <input type="text" id="seguidoresTikTok" name="seguidoresTikTok" required/>
           </div>
           <p>ex: 3,140,100</p>
           <div class="content">
-            <label for="inscritosYouTube">Número de inscritos</label>
+            <label for="inscritosYouTube">Número de inscritos (Youtube)</label>
             <input type="text" id="inscritosYouTube" name="inscritosYouTube" required/>
           </div>
           <p>ex: 875,329,010</p>
