@@ -12,28 +12,39 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="/src/assets/images/lightFavIcon.svg" type="image/x-icon">
-
+    <script src="/src/js/hamburgerMenu.js" defer></script>
   </head>
   <body>
     <header>
-      <img
-        src="/src/assets/images/logotipo.svg"
-        alt="logotipo da empresa top influência"
-      />
-      <nav>
+      <div class="header-wrapper">
+        <img
+          src="/src/assets/images/logotipo.svg"
+          alt="logotipo da empresa top influência"
+          class="logo"
+        />
+
+        <!-- Botão hamburguer -->
+        <button class="hamburger" id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav id="navMenu">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li>
-            <a href="/src/pages/para-marcas/paraMarcas.html">Para Marcas</a>
+            <a href="/src/pages/para-marcas/paraMarcas.html" 
+              >Para Marcas</a
+            >
           </li>
           <li>
             <a href="/src/pages/para-influenciadores/paraInfluenciadores.html"
               >Para Influenciadores</a
             >
           </li>
-          <li>
-            <a href="/src/pages/sobre-nos/sobreNos.html" class="active">Sobre Nós</a>
-          </li>
+          <li><a href="/src/pages/sobre-nos/sobreNos.html" class="active">Sobre Nós</a></li>
         </ul>
       </nav>
     </header>
