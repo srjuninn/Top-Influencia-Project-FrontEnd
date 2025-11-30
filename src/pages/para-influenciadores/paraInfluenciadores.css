@@ -277,3 +277,282 @@ fieldset>p {
     /* abre um pouco o texto */
 }
 /* ---------- Fim section contato ---------- */
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 100%;
+    padding: 10px 16px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  nav > ul {
+    gap: 24px;
+  }
+
+  .buttonsWrapper {
+    gap: 8px;
+  }
+
+  /* Main */
+  main {
+    gap: 28px;
+    padding-top: 90px; /* compensa header fixo */
+  }
+
+  main > h1 {
+    margin-top: 40px;
+    width: 90%;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  main > h2 {
+    width: 90%;
+    margin-top: -10px;
+    font-size: 22px;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .mainContent > aside > nav > ul {
+    gap: 20px;
+  }
+
+  .mainContent > aside > nav > ul > li > p {
+    font-size: 16px;
+  }
+
+  main > button:nth-child(4),
+  main > button:nth-child(5) {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  /* Contato */
+  .contato {
+    gap: 28px;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .contato > h2 {
+    width: 100%;
+    font-size: 28px;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .contato > form {
+    gap: 24px;
+    width: 100%;
+  }
+
+  .fieldsetWrap {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+    justify-content: center;
+  }
+
+  .contato > form > .fieldsetWrap > fieldset {
+    width: 46%;
+    gap: 8px;
+  }
+
+  .contato > form > .fieldsetWrap > fieldset > legend {
+    font-size: 22px;
+  }
+
+  .content > label {
+    font-size: 16px;
+  }
+
+  .content > input {
+    height: 40px;
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+
+  fieldset > p {
+    font-size: 15px;
+  }
+
+  .contato > form > button {
+    padding: 16px 80px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 100%;
+    padding: 10px 16px;
+    gap: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 1002;
+  }
+
+  /* Menu escondido e menu aberto full-screen */
+  header > nav ul { display: none; }
+
+  nav.show ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    position: fixed;
+    inset: 0;
+    background: var(--color-white1000);
+    z-index: 1000;
+  }
+
+  nav > ul > li > a { font-size: 28px; }
+
+  /* Main */
+  main {
+    gap: 24px;
+    padding-top: 96px; /* compensa header fixo */
+  }
+
+  main > h1 {
+    margin-top: 0;
+    font-size: 32px;
+    text-align: center;
+    padding: 0 10px;
+    width: 90%;
+  }
+
+  main > h2 {
+    width: 90%;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -8px;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .mainContent > aside > nav > ul {
+    gap: 16px;
+  }
+
+  .mainContent > aside > nav > ul > li {
+    gap: 8px;
+  }
+
+  .mainContent > aside > nav > ul > li > p {
+    font-size: 15px;
+  }
+
+  main > button:nth-child(4),
+  main > button:nth-child(5) {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  /* Cards (se usar em outras sessões) */
+  .cardsWrapper {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  .cardsWrapper > .card {
+    width: 100%;
+    padding: 18px 12px;
+  }
+
+  .cardsWrapper > .card > h3 { font-size: 18px; }
+  .cardsWrapper > .card > p  { font-size: 16px; }
+
+  /* Contato */
+  .contato {
+    gap: 24px;
+    margin-top: 16px;
+    padding: 0 16px;
+    background-color: var(--color-white1000);
+  }
+
+  .contato > h2 {
+    width: 100%;
+    font-size: 26px;
+    margin-top: 16px;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .contato > form {
+    gap: 18px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .fieldsetWrap {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .contato > form > .fieldsetWrap > fieldset {
+    width: 100%;
+  }
+
+  .contato > form > .fieldsetWrap > fieldset > legend {
+    font-size: 20px;
+  }
+
+  .content > label { font-size: 16px; }
+
+  .content > input {
+    height: 38px;
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  fieldset > p { font-size: 15px; }
+
+  .contato > form > button {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+}
