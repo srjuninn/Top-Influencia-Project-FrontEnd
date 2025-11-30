@@ -1,11 +1,12 @@
 @import url(/src/styles/global.css);
-
+html {
+    overflow-y: hidden;
+}
 /* ---------- Header ---------- */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
     gap: 60px;
     background-color: var(--color-white1000);
 }
@@ -17,8 +18,9 @@ header {
     padding: 1rem;
 }
 
-.logo {
-    height: 40px;
+.logo img {
+    width: 50px;
+    height: 60px;
 }
 
 
@@ -40,7 +42,6 @@ nav>ul>li>a {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 45px;
     width: 100%;
@@ -58,6 +59,7 @@ main>h1 {
     font-size: 67px;
     font-weight: 700;
     text-align: center;
+    margin-top: 100px;
 }
 
 main>h2 {
