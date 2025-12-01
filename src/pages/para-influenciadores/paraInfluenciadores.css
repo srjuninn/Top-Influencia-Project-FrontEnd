@@ -393,7 +393,7 @@ fieldset>p {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
 
   /* Header */
   header {
@@ -429,14 +429,16 @@ fieldset>p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
     position: fixed;
     inset: 0;
     background: var(--color-white1000);
     z-index: 1000;
   }
 
-  nav > ul > li > a { font-size: 28px; }
+  nav > ul > li > a { font-size: 32px; }
 
   /* Main */
   main {
@@ -465,6 +467,10 @@ fieldset>p {
     gap: 20px;
     width: 100%;
     padding: 0 12px;
+  }
+
+  .mainContent > img {
+    width: 100%;
   }
 
   .mainContent > aside > nav > ul {
