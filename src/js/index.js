@@ -15,16 +15,4 @@ btnMarca.addEventListener("click", () => {
 btnInfluenciador.addEventListener("click", () => {
   smoothRedirect("/src/pages/para-influenciadores/paraInfluenciadores.html");
 });
-// menu hamburguer
-// Seleciona os elementos
-const hamburgerBtn = document.getElementById("hamburgerBtn");
-const navMenu = document.getElementById("navMenu");
 
-// Adiciona evento de clique
-hamburgerBtn.addEventListener("click", () => {
-  // Alterna a classe "show" no menu
-  navMenu.classList.toggle("show");
-
-  // Alterna a animação do botão hambúrguer (vira X)
-  hamburgerBtn.classList.toggle("active");
-});
